@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:background="#323232"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/back_xq"
+            android:src="@drawable/xiang"
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/title_xq"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_xq"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:src="@drawable/zm"
+            android:layout_height="50dp" />
+        <TextView
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="曹付奎"
+            android:id="@+id/chang"
+            android:layout_toRightOf="@id/img_xq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="18dp"
+            android:text="我喜欢你"
+            android:textColor="#000"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginTop="25dp"
+            android:id="@+id/bulletin"
+            android:layout_toRightOf="@id/img_xq"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/img_xq"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ViewFlipper
+            android:autoStart="true"
+            android:flipInterval="4000"
+            android:id="@+id/filpper"
+            android:layout_width="match_parent"
+            android:inAnimation="@anim/anim_come_in"
+            android:outAnimation="@anim/anim_get_out"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="11dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:text="3个活动 >"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <android.support.design.widget.TabItem
+            android:text="点菜"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TabItem
+            android:text="评价"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TabItem
+            android:text="商家"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TabLayout>
+    <FrameLayout
+        android:id="@+id/xq_frame"
+        android:background="#fff0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</LinearLayout>

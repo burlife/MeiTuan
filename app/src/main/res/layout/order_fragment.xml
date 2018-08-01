@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F4F4"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="订单"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:id="@+id/t_ren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        app:srcCompat="@drawable/ren" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_ren"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="您还没有登录，请登录后查看订单"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/b_deng"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#FFD161"
+        android:text="登录/注册" />
+</RelativeLayout>
